@@ -1,35 +1,63 @@
 :root {
-  --primary-color: hsl(205, 78%, 60%);
+  --primary-color: hsl(209, 61%, 16%);
+  --accent-color: #49a6e9;
+  --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 body {
-  margin: 0px auto;
+  background-image: url(./images/bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   letter-spacing: 3px;
+  line-height: 1.25;
+  color: var(--primary-color);
+  overflow: hidden;
+}
+
+main {
+  background-color: #fff;
+  text-align: center;
+  width: 90vh;
+  max-width: 620px;
+  padding: 50px 50px;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
 }
 
 button {
-  display: block;
-  margin: 0 auto;
-  padding: 12px 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  opacity: 0.8;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: var(--accent-color);
+  color: #fff;
+  box-shadow: var(--shadow);
   border-radius: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.9);
-  margin-top: 40px;
+  border: 2px solid var(--accent-color);
   transition: all 0.3s linear;
 }
 
 button:hover {
-  background-color: #000;
-  opacity: 0.9;
-  color: #fff;
+  background-color: #fff;
+  color: var(--accent-color);
   cursor: pointer;
+}
+
+.modal-block {
+  display: none;
 }
 
 @media (max-width: 768px) {
