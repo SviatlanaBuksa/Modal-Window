@@ -14,11 +14,15 @@
   <body>
     <main>
       <h1>modal project</h1>
-      <button>open modal</button>
+      <button id="open-modal">open modal</button>
     </main>
-    <div class="modal-block">
-      <h3>modal content</h3>
-      <i class="fa-solid fa-xmark fa-2xl"></i>
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <h3>modal content</h3>
+        <button id="close-modal">
+          <i class="fa-solid fa-xmark fa-2xl"></i>
+        </button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
